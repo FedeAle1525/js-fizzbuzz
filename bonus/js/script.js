@@ -1,3 +1,11 @@
+// BONUS 1. Creo elemento "container" all'interno del "body" in file HTML
+const body = document.getElementById("body");
+const container = '<div id="container"></div>';
+body.innerHTML = container;
+
+// BONUS 1 - Forma Compatta
+// document.getElementById("body").innerHTML = '<div id="container"></div>';
+
 // 1. Stampare in console i numeri da 1 a 100
 
 for (let i = 1; i<=100; i++){
