@@ -12,17 +12,20 @@ for (let i = 1; i<=100; i++){
 
   // 3. Stampo a console il messaggio "Fizz" per i multipli di 3
   if (restoMult3===0 && restoMult5!==0){
-    console.log(i,"Fizz");
+    // console.log(i,"Fizz");
+    console.log("Fizz");
   }
 
   // 4. Stampo a console il messaggio "Buzz" per i multipli di 5 
   if (restoMult3!==0 && restoMult5===0){
-    console.log(i,"Buzz");
+    // console.log(i,"Buzz");
+    console.log("Buzz");
   }
 
   // 5. Stampo a console il messaggio "FizzBuzz" per i multipli di 15
   if (restoMult3===0 && restoMult5===0 && restoMult15===0){
-    console.log(i,"FizzBuzz");
+    // console.log(i,"FizzBuzz");
+    console.log("FizzBuzz");
   }
 
   // 6. Stampo a console solo il numero se non è multiplo di 3,5 e 15
