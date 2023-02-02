@@ -1,10 +1,14 @@
-// BONUS 1. Creo elemento "container" all'interno del "body" in file HTML
+// BONUS 1. Seleziono elemento "body" in file HTML
 const body = document.getElementById("body");
 const container = '<div id="container"></div>';
 body.innerHTML = container;
 
 // BONUS 1 - Forma Compatta
-// document.getElementById("body").innerHTML = '<div id="container"></div>';
+// document.getElementById("body"),innerHTML = '<div id="container"></div>';
+
+// BONUS 2. Seleziono elemento "container" da file Html
+const containerEl = document.getElementById("container");
+// console.log(containerEl);
 
 // 1. Stampare in console i numeri da 1 a 100
 
@@ -22,23 +26,35 @@ for (let i = 1; i<=100; i++){
   if (restoMult3===0 && restoMult5!==0){
     // console.log(i,"Fizz");
     console.log("Fizz");
+
+    // BONUS 3. Inserisco all'interno dell'elemento "container" il messaggio
+    containerEl.innerHTML += 'Fizz <br>';
   }
 
-  // 4. Stampo a console il messaggio "Buzz" per i multipli di 5 
+  // 4. Stampo a console il messaggio "Buzz" per i multipli di 5
   if (restoMult3!==0 && restoMult5===0){
     // console.log(i,"Buzz");
     console.log("Buzz");
+
+    // BONUS 3. Inserisco all'interno dell'elemento "container" il messaggio
+    containerEl.innerHTML += 'Buzz <br>';
   }
 
   // 5. Stampo a console il messaggio "FizzBuzz" per i multipli di 15
   if (restoMult3===0 && restoMult5===0 && restoMult15===0){
     // console.log(i,"FizzBuzz");
     console.log("FizzBuzz");
+
+    // BONUS 3. Inserisco all'interno dell'elemento "container" il messaggio
+    containerEl.innerHTML += 'FizzBuzz <br>';
   }
 
   // 6. Stampo a console solo il numero se non è multiplo di 3,5 e 15
   if (restoMult3!==0 && restoMult5!==0 && restoMult15!==0){
     console.log(i);
+
+    // BONUS 3. Inserisco all'interno dell'elemento "container" il non multiplo
+    containerEl.innerHTML += i + '<br>';
   }
-  
+
 }
